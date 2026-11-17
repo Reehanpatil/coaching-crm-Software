@@ -47,7 +47,7 @@ const ADMO=[['clerks','Clerk Logins','shield'],['access','Role Access Control','
 const PLANM={Basic:['dash','students','enq','adm','fees','pend'],Pro:['dash','students','enq','adm','fees','pend','rem','exp'],Premium:MODS.map(m=>m[0])},PRICE={Basic:1999,Pro:3999,Premium:6999};
 /* ===== DATA ===== */
 const CLS=['Class 9','Class 10','Class 11 Science','Class 12 Science','NEET Batch','JEE Batch'],FEE=[1500,1800,2500,2800,3500,3500];
-function seed(){const D={root:{name:'Root Admin',email:'root@demo.com',pass:'root123'},cls:CLS,
+function seed(){const D={root:{name:'',email:'',pass:''},cls:CLS,
 admins:[{name:'Rahul Sharma',inst:'Brightpath Coaching Institute',email:'admin@demo.com',pass:'admin123',plan:'Premium',mods:PLANM.Premium.slice(),exp:ad(TD,90),on:true},{name:'Neha Singh',inst:'Elite Academy',email:'neha@demo.com',pass:'neha123',plan:'Pro',mods:PLANM.Pro.slice(),exp:ad(TD,6),on:true},{name:'Amit Verma',inst:'Success Point',email:'amit@demo.com',pass:'amit123',plan:'Basic',mods:PLANM.Basic.slice(),exp:ad(TD,-3),on:false}],
 clerks:[{name:'Priya Verma',email:'clerk@demo.com',pass:'clerk123',mods:['dash','students','enq','adm','fees','pend'],on:true}],
 set:{name:'Brightpath Coaching Institute',tag:'Learn. Practice. Succeed.',addr:'Tilakwadi, Belagavi, Karnataka 590006',phone:'9845000000',email:'office@brightpath.example',reg:'REG/2020/0001',year:'2026-27',pre:'BP-',admfee:1000,welcome:'Welcome to {inst}! {name} is now admitted (Admission No. {adm}). We wish your child a great learning journey.'},
